@@ -1,4 +1,4 @@
-print("=====DESAFIO #01=====") #datetime #pintar primos de azul (% resto 0 por 1 e ele mesmo)
+print("=====DESAFIO #01=====")
 
 valor_casa = float(input("Valor da casa: "))
 sal = float(input("Salário: "))
