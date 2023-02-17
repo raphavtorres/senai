@@ -1,17 +1,16 @@
 print("=====DESAFIO #10=====")
-#pintar primos de azul (% resto 0 por 1 e ele mesmo)
-
-#AINDA NÃO CONSEGUI FAZER O PRIMO
 
 num = int(input("Digite um número: "))
 
-primo = 0
+divisores = 0
+
 for i in range(1, num + 1):
-    if (num % (i + 1) != 0) and (i != num):
-        primo += 1
-
-    print(i, end=' ')
-
-if primo > 1:
-    print("É primo!")
-
+    if num % i == 0:
+        divisores += 1
+        print('\033[0;30;42m', i, '\033[m', end=' ')
+    else:
+        print('\033[0;30;41m', i, '\033[m', end=' ')
+if divisores == 2:
+    print("➡ É primo!")
+else:
+    print("➡ Não é primo!")
