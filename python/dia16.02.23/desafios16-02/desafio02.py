@@ -4,21 +4,22 @@ num = int(input("Digite um número: "))
 base = int(input('''Escolha uma das bases: 
 [1] Binário
 [2] Octal
-[3] Hexadecimal'''))
+[3] Hexadecimal
+Sua opção: '''))
 
 
 def decBin():
-    pass
+    print(f"O binário de {num} é \033[0;30;43m{bin(num)}\033[m")
 # fundo amarelo
 
 
 def decOct():
-    pass
+    print(f"O octal de {num} é \033[0;30;44m{oct(num)}\033[m")
 # fundo azul
 
 
 def decHex():
-    pass
+    print("O hexadecimal de %d é \033[0;30;45m%04X\033[m" % (num, num))
 # fundo rosa
 
 
@@ -30,6 +31,3 @@ elif base == 3:
     decHex()
 else:
     print("\33[31mOpção inválida.\33[m")
-
-print(f"Sua opção: ")
-

@@ -13,6 +13,6 @@ print(v_formatado)
 
 # ARRUMAR CORES
 if v_formatado[::-1] == v_formatado:
-    print("\33[1; 34mÉ palindromo! ")
+    print("O texto digitado \033[1;34;0 mÉ palindromo!\033[m")
 else:
-    print("\33[1; 31mNão é palindromo!")
+    print("O texto digitado \033[1;31;0 mNão é palindromo!\033[m")

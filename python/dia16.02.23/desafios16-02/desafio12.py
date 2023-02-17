@@ -12,5 +12,7 @@ for i in range(1, 8):
         maiores += 1
     else:
         menores += 1
-print(f"Total de maiores: {maiores}")
-print(f"Total de menores: {menores}")
+
+maiores = str(maiores)
+print("Total de maiores: {}{}{}".format('\033[1;34m', maiores, '\033[m'))
+print("Total de menores: {}{}{}".format('\033[1;31m', menores, '\033[m'))
