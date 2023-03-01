@@ -8,7 +8,8 @@ def trabalharLista(list, num):
     print(f"Lista = {list}")
     return list
 
-list = []
+
+lista = []
 while True:
     try:
         num = float(input("Digite o valor: "))
@@ -16,11 +17,12 @@ while True:
         print("Valor Inválido! Digite um número!")
         continue
 
-    trabalharLista(list, num)
+    trabalharLista(lista, num)
 
     continuar = input("Deseja continuar? [S/N]: ").lower().strip()
     if continuar != "s":
-        print(f"Lista = {list.sort()}")
+        lista.sort()
+        print(f"Lista = {lista}")
         break
 
 
