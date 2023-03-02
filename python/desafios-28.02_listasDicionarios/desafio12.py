@@ -1,3 +1,5 @@
+# REFAZER EXERCÍCIO
+
 cadastro = []
 notas = []
 i = 0
