@@ -1,7 +1,5 @@
-# AINDA NÃO ESTÁ FUNCIONANDO
-
+qnt_pessoas = 0
 cadastro = []
-lista_pesos = []
 
 i = 0
 while True:
@@ -10,25 +8,29 @@ while True:
 
     pessoa = [nome, peso]
 
-    lista_pesos.append(pessoa[1])
     cadastro.append(pessoa)
+    qnt_pessoas += 1
 
-    quit = input("Continuar? [S/N]: ").lower()
+    quit = input("Continuar? [S/N]: ")
+    i += 1
     if quit != 's':
         break
-
-menor_peso = min(lista_pesos)
-maior_peso = max(lista_pesos)
-
-
-print(menor_peso, maior_peso)
 print(cadastro)
-# pessoa_menor_peso = cadastro.index(menor_peso)
-# pessoa_maior_peso = cadastro.index(menor_peso)
+maior_peso = cadastro[0][1]
+menor_peso = cadastro[0][1]
+pessoa_maior_peso = cadastro[0][0]
+pessoa_menor_peso = cadastro[0][0]
 
+for p in cadastro:
+    if maior_peso < p[1]:
+        maior_peso = p[1]
+        pessoa_maior_peso = p[0]
+
+    if menor_peso > p[1]:
+        menor_peso = p[1]
+        pessoa_menor_peso = p[0]
 
 print(f"Dados cadastrados: {cadastro}")
-print(f"Total de cadastros: {len(cadastro)}")
-# print(f"Maior peso: {pessoa_maior_peso}, com {maior_peso}Kg")
-# print(f"Menor peso: {pessoa_menor_peso}, com {menor_peso}")
-
+print(f"Total de cadastros: {qnt_pessoas}")
+print(f"Maior peso: {pessoa_maior_peso} com {maior_peso}Kg")
+print(f"Menor peso: {pessoa_menor_peso} com {menor_peso}Kg")
