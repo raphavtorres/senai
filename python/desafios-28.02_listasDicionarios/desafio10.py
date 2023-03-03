@@ -33,4 +33,3 @@ print(f"Total Pares: {total_pares}")
 print(f"Total Ímpares: {total_impares}")
 print(f"Soma da 3ª coluna: {soma_terc_coluna}")
 print(f"Maior valor da 2ª linha: {maior_seg_linha}")
-

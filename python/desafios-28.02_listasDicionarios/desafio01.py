@@ -22,4 +22,5 @@ pos_maior = list_num.index(maior_num)
 pos_menor = list_num.index(menor_num)
 
 print(f"Os números escolhidos foram: {list_num}")
-print(f"O menor número é {menor_num} e está na {pos_menor + 1}ª posição . O maior é {maior_num} e está na {pos_maior + 1}ª posição")
+print(f"O menor número é {menor_num} e está na {pos_menor + 1}ª posição. "
+      f"O maior é {maior_num} e está na {pos_maior + 1}ª posição")

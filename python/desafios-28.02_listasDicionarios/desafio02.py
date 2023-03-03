@@ -25,4 +25,3 @@ while True:
         print(f"Lista = {lista}")
         break
 
-
