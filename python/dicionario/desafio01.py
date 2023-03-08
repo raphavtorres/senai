@@ -18,4 +18,3 @@ elif aluno['nota'] <= 10:
     print("Aprovado")
 else:
     print("Valor de nota inválido")
-    

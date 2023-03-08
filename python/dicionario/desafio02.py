@@ -21,5 +21,3 @@ print("-" * 20)
 
 for i in range(4):
     print(f"O {i + 1}º lugar: {jogos_ord[i][0]} com {jogos_ord[i][1]}.")
-
-
