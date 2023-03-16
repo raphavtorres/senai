@@ -37,5 +37,6 @@ public class Basic_Ex03 {
             sum = first_array[i] + second_array[i];
             System.out.println("The sum of the " + (i+1)+ "º position of both arrays: " + sum);
         }
+        scanner.close();
     }
 }

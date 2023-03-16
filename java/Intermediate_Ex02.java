@@ -24,5 +24,6 @@ public class Intermediate_Ex02 {
 
         System.out.println(Arrays.toString(num_array));
         System.out.println(Arrays.toString(inverse_array));
+        scanner.close();
     }
 }
