@@ -1,12 +1,10 @@
 import java.util.Arrays;
 import java.util.Locale;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Intermediate_Ex03 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 
         int size_array, value, nozero_amount = 0;
