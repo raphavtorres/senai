@@ -13,9 +13,7 @@ interval = range(00)
 def falsy(value):
     return 'falsy' if not value else 'truthy'
 
-
-
-
+#-----------------------------------------------------------------------------------------------------  
 
 
 # dir, hasattr e getattr
@@ -39,14 +37,7 @@ else:
     print(f"Method {method} doesn't exists")
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+#-----------------------------------------------------------------------------------------------------    
     
     
 # Generator expression, Iterables and Iterators
@@ -79,12 +70,28 @@ print(next(generator))
 for n in generator:
     print(n)
 
-    
-    
-    
-    
-    
-    
+#-----------------------------------------------------------------------------------------------------    
+ 
+# Generator Function uses yield (pauses) instead of return
+
+
+def generator(n=0):
+    yield 1  # Pause
+    print('continuing')  # raises an StopIneteration exception
+    yield 2
+    print('one more time')
+    yield 3
+    print("Vou terminar")
+    return "Acabou"
+
+
+gen = generator(n=0)
+# print(gen.__iter__())
+for n in gen:
+    print(n)
+
+       
+#-----------------------------------------------------------------------------------------------------       
     
     
 # FOR UNDER THE CARPET
