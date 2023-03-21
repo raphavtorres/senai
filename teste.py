@@ -37,3 +37,44 @@ if hasattr(string, method):
     print(getattr(string, method)())
 else:
     print(f"Method {method} doesn't exists")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# Generator expression, Iterables and Iterators
+# Iterator --> responsible for returning one element at a time
+# It doesn't know much about the iterable
+# "it only knows about the next element"
+
+iterable = ["I", "Have", "__iter__"]
+iterator = iterable.__iter__()  # tem __iter__ and __next__
+# iterator = iter(iterable) (same as in the top)
+
+print(next(iterator))
+print(next(iterator))
+print(next(iterator))
+
+# iterator runs out of values (ESGOTA os valores)
+
+# Generators ==> functions that can pause
+# All generators are iterators, but not the opposite
+import sys
+list = [n for n in range(1000)]  # in the memory since the moment I create it
+generator = (n for n in range(1000))
+print(sys.getsizeof(list))
+print(sys.getsizeof(generator))
+
+print(next(generator))
+print(next(generator))
+print(next(generator))
+
+for n in generator:
+    print(n)
