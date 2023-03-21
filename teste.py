@@ -78,3 +78,25 @@ print(next(generator))
 
 for n in generator:
     print(n)
+
+    
+    
+    
+    
+    
+    
+    
+    
+# FOR UNDER THE CARPET
+name = "Raphael"
+# for letter in name:
+#     print(letter)
+
+iterator = name.__iter__()
+# iterator = iter(name)
+
+while True:
+    try:
+        print(next(iterator))
+    except StopIteration:
+        break
