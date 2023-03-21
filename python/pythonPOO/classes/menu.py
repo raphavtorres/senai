@@ -8,8 +8,9 @@ filmes = [
     ['Interestelar'],
     ['Shrek'],
     ['Gato de Botas'],
-    []
+    ['Piratas do Caribe']
 ]
+
 
 def menu():
     while True:
@@ -57,6 +58,7 @@ def entrar():
                 novo_usuario.append(clientes[i][0])
                 novo_usuario.append(clientes[i][1])
                 novo_usuario.append(clientes[i][2])
+                novo_usuario.append(clientes[i][3])
                 break
 
             print("Cliente não cadastrado")

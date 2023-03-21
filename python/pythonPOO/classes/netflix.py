@@ -1,9 +1,10 @@
 class Cliente:
     # planos = ['basic', 'medium', 'premium']  # lista global
 
-    def __init__(self, nome: str, email: str, plano: str):
+    def __init__(self, nome: str, email: str, plano: str, tipo: str):
         self.nome = nome
         self.email = email
+        self.tipo = tipo
         self.planos = ['basic', 'medium', 'premium']
         if plano in self.planos:
             self.plano = plano
