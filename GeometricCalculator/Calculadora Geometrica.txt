@@ -1,0 +1,16 @@
+CALCULADORA GEOMÉTRICA
+A calculadora Geométrica calcular figuras planas
+e espaciais, ela vai calcular nas planas área e perimetro
+e nas espacias volume e área superficial.
+
+Cada figura em uma classe
+Todas instanciadas na main
+Fazer com menu
+Programa em laço até o usuario sair
+Não aceita negativos nem caracter especial
+Fazer somente com as variaveis necessarias
+
+Planas: Triângulo Equilatero*, Quadrado*, Retangulo*, Circulo*, Hexagono*
+
+Espaciais: Cubo, Paralelepipido, Esfera, Piramide de Base Quadrada, Cilindro, Cone.
+
